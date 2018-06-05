@@ -23,6 +23,10 @@
     border-color: black;
     background-color: green;
   }
+  @keyframes example{
+    from{ background-color: yellow; left: 0px;}
+    to{ background-color: red; left: 200px;}
+  }
   
   .box {
     height: 40px;

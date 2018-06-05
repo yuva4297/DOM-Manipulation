@@ -67,16 +67,16 @@
         <h3>DOM Events</h3>
 
         <p>1. Change the text entered in the input box to upper case when you move out of the input box.</p>
-        <input type="text" id="inputBox1" >
-        <input type="text" id="inputBox2" >
+        <input type="text" id="inputBox1" onmouseout="convert_upper()">
+        <input type="text" id="inputBox2">
         <hr>
         <p>2. When you leave the input field, transform the input text to camel case.</p>
-        <input type="text" id="inputBox3">
+        <input type="text" id="inputBox3" onmouseout="convert_camel()">
         <hr>
         <p>3. Print the preffered browser name to the console, when you select a dropdown value</p>
         <form>
             Choose which browser you prefer:
-            <select id="browsers">
+            <select id="browsers" onchange="browser_name()">
                 <option value="Chrome">Chrome</option>
                 <option value="Firefox">Firefox</option>
                 <option value="Internet Explorer">Internet Explorer</option>
@@ -84,7 +84,8 @@
         </form>
         <hr>
         <p>4. When the input field gets focus, change the background-color.</p>
-        <input type="text">
+        <input type="text" id="inputBox5" onfocus="change_color()">
+
         <hr>
     <script src="js/app.js"></script>
 </body>
